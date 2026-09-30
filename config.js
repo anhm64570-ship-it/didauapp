@@ -1,0 +1,4 @@
+window.DIDAU_CONFIG = {
+  GOOGLE_MAPS_API_KEY: "",
+  GOOGLE_MAP_ID: "DEMO_MAP_ID"
+};

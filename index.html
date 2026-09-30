@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fff9f2" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Đi Đâu?" />
+  <meta name="description" content="Đi Đâu? — chọn địa điểm đi chơi cùng nhóm bạn" />
+  <title>Đi Đâu?</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="assets/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="appShell">
+    <main id="app"></main>
+    <nav id="bottomNav" class="bottom-nav hidden" aria-label="Điều hướng chính">
+      <button data-go="home"><span class="nav-icon">⌂</span><span>Trang chủ</span></button>
+      <button data-go="explore"><span class="nav-icon">⌕</span><span>Khám phá</span></button>
+      <button class="fab" data-go="create" aria-label="Tạo kèo">＋</button>
+      <button data-go="plans"><span class="nav-icon">♡</span><span>Kèo</span></button>
+      <button data-go="profile"><span class="nav-icon">☺</span><span>Cá nhân</span></button>
+    </nav>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <div id="installBanner" class="install-banner hidden">
+    <div><b>Cài Đi Đâu? lên điện thoại</b><div class="tiny">Mở như app, không cần App Store.</div></div>
+    <button id="installPwa">Cài app</button>
+    <button id="dismissInstall" class="icon-btn">×</button>
+  </div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
